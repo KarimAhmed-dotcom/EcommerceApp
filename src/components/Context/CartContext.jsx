@@ -140,6 +140,8 @@ function CartProvider({children}){
         }
         catch(error){
             console.log(error)
+        }finally{
+            setLoading(false)
         }
        
     },[user?.token || user|| localStorage.getItem('userToken')])

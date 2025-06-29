@@ -36,6 +36,10 @@ useEffect(() => {
       setProducts(data)
       setLoading(false)
   }
+  if (!user) {
+    setLoading(false);
+    return;
+  }
   if (products.length) return;
   getProducts()
 },[setProducts,products.length])
@@ -50,7 +54,7 @@ useEffect(() => {
           <Navbar />
           <ToastContainer className='d-flex justify-content-center align-items-center w-100'/>
           <main style={{marginBlock:'61px',flexGrow:'1'}}>
-            {state === 'loading' && <Spinner />}
+            {/* {state === 'loading' && <Spinner />} */}
             {state === 'submitting' && <Spinner />}
 
             {/* <Spinner /> */}
