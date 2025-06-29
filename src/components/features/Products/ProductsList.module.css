@@ -1,0 +1,94 @@
+.products > div{
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 1rem;
+  transition: 0.3s;
+  height: 100%;
+}
+.productImg{
+  max-height: 270px;
+  overflow: hidden;
+}
+
+.productImg img{
+  transform: scale(1.2);
+}
+.products a{
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.products .buttons{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+.products .buttons > * {
+  display: flex;
+  align-items: center;
+  height:40px;
+}
+div .buttons button svg{
+  font-size: 1.5rem;
+}
+.products .buttons button{
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  transform: translate(-100%);
+  transition: 0.3s;
+  opacity: 0;
+}
+.products .buttons > div:hover small {
+  transform: translate(0);
+  opacity: 1;
+}
+.products:hover button{
+  transform: translate(0);
+  opacity: 1;
+
+}
+.products .buttons .addToCart > *,
+.products .buttons .addToWish > *{
+  height: 100%;
+}
+.products .buttons .addToCart button{
+  background-color: var(--main-color);
+  
+}
+.products .buttons .addToWish button{
+  background-color: var(--red);
+}
+.products .buttons .addToWish small span{
+  color: var(--red);
+}
+.products .buttons .addToCart small span{
+  color: var(--main-color);
+}
+.products .buttons small{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 0.7rem;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  transform: translate(-50%);
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.products > div:hover{
+  box-shadow: 0 0 0 1px var(--main-color), 0 0 10px 5px rgba(0,0,0,0.3) ;
+}

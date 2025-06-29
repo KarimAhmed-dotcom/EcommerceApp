@@ -1,0 +1,32 @@
+:global(.active){
+    color:var(--main-color) !important;
+    font-weight: 500 !important;
+}
+:global(.navbar){
+    box-shadow: 0 5px 10px  rgba(0,0,0,0.1);
+}
+.socialIcon {
+  transition: transform 0.3s ease;
+}
+
+.socialIcon:hover {
+  transform: scale(1.5);
+}
+
+.cartButton{
+  position: relative;
+}
+
+.cartButton::after{
+  position: absolute;
+  content: attr(data-cart-items);
+  top: 0;
+  right: 0;
+  padding: 0.25rem;
+  background-color: var(--main-color);
+  color: white;
+  font-size: calc(0.8rem + 0.1vw);
+  border-radius: 5px;
+  transform: translate(30%,-10%);
+  line-height: 1;
+}
