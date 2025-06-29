@@ -36,10 +36,10 @@ useEffect(() => {
       setProducts(data)
       setLoading(false)
   }
-  if (!user) {
-    setLoading(false);
-    return;
-  }
+  // if (!user) {
+  //   setLoading(false);
+  //   return;
+  // }
   if (products.length) return;
   getProducts()
 },[setProducts,products.length])
