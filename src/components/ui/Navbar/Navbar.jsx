@@ -42,9 +42,6 @@ function Navbar(){
           <NavLink className="nav-link" aria-current="page" to="/categories">Categories</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" aria-current="page" to="/brands">Brands</NavLink>
-        </li>
-        <li className="nav-item">
           <NavLink className="nav-link" aria-current="page" to="/wishlist">Wishlist</NavLink>
         </li>
         <li className="nav-item">
