@@ -35,12 +35,8 @@
   - React.js  
 
 - **React Libraries:**
-  - `react-hot-toast` – for elegant toast notifications  
-  - `react-helmet` – to manage document head (like title and meta tags)  
   - `react-router-dom` – for client-side routing  
   - `react-loader-spinner` – to show loading indicators  
-  - `react-responsive-pagination` – for paginated lists  
-  - `react-detect-offline` – to detect internet connection status  
   - `jwt-decode` – to decode JSON Web Tokens  
   - `formik` – for building and managing forms  
   - `yup` – for form validation  
