@@ -1,6 +1,6 @@
 # EcommerceApp
 
-** Features and Functionalities
+### Features and Functionalities
 
 User Authentication: Users can create accounts, log in securely, and manage their profiles, which include personal information and order history.
 
@@ -17,7 +17,7 @@ Checkout Process: Users can securely complete their purchases by providing shipp
 Order Tracking: Customers can track the status of their orders in real-time, from processing to shipping and delivery.
 
 
-** Technologies, Frameworks, and Libraries
+### Technologies, Frameworks, and Libraries
 HTML
 CSS
 JavaScript
